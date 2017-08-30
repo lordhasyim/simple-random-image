@@ -15,13 +15,13 @@ docs/_build
 cache.properties
 build
 vendor/
+cache/
 composer.phar
 application/logs/
 application/config/config.php
 application/config/database.php
 
 /phpunit.xml
-/vendor
 /composer.lock
 
 Thumbs.db

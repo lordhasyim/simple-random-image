@@ -17,5 +17,12 @@ $app->register(new Silex\Provider\DoctrineServiceProvider, [
     ]
 ]);
 
+$app->register(new Moust\Silex\Provider\CacheServiceProvider, [
+    'cache.options' => [
+        'driver' => 'file',
+        'cache_dir' => __DIR__ . '/../cache/images'
+    ]
+]);
+
 $app->register(new App\Providers\ImageServiceProvider);
 require __DIR__ . '/../routes/web.php'; 
